@@ -1,0 +1,216 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?ht2pvz');
+  src:  url('fonts/icomoon.eot?ht2pvz#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ht2pvz') format('truetype'),
+    url('fonts/icomoon.woff?ht2pvz') format('woff'),
+    url('fonts/icomoon.svg?ht2pvz#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+  content: "\e901";
+}
+.icon-user-solid-circle:before {
+  content: "\e908";
+}
+.icon-home:before {
+  content: "\e902";
+}
+.icon-trending:before {
+  content: "\e903";
+}
+.icon-bubble:before {
+  content: "\e907";
+}
+.icon-comment:before {
+  content: "\e907";
+}
+.icon-chat:before {
+  content: "\e907";
+}
+.icon-talk:before {
+  content: "\e907";
+}
+.icon-movie:before {
+  content: "\e904";
+}
+.icon-settings:before {
+  content: "\e905";
+}
+.icon-love:before {
+  content: "\e906";
+}
+.icon-favorite:before {
+  content: "\e906";
+}
+.icon-search:before {
+  content: "\e900";
+}
+
+  
+  body {
+    margin: 0;
+  }
+  .page-logo {
+    font-family: 'Permanent Marker', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 69px;
+    font-size: 2rem;
+    
+  }
+  .page-logo i {
+    color: #00A6FB;
+  }
+  .item {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .item:hover .post-overlay {
+    display: flex;
+  }
+  .post-overlay {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, .4);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .post-overlay a {
+    color: white;
+    text-decoration: none;
+    
+  }
+  .side-bar {
+    grid-column-end: 2;
+    background: #051923;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    color: white;
+    justify-content: center;
+  }
+  .side-bar .side-item i {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .side-item {
+    text-align: center;
+  }
+  .side-item i {
+    color: #00A6FB;
+  }
+  .settings {
+    grid-row-start: 5 ;
+  }
+  .main-content{
+    height: 96%;
+    width: 90%;
+    grid-column-end:3 ;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    margin: 0 auto  ;
+    margin-top: 10px;
+    gap: 17px;
+    overflow: overlay;
+    padding-top: 10px;
+  }
+  .main-content img {
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 10px;
+    
+  }
+  .menu {
+    grid-column-start: span 3;
+    background: #051923;
+    display: grid;
+    grid-template-columns: 25% 50% 10% 15%;
+    grid-template-rows: 100%;
+    align-items: center;
+    color: white;
+  }
+  .menu .search {
+    margin-left: 100px;
+    width: 80%;
+    height: 50%;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    justify-self: end;
+  }
+  .menu .search-button i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white ;
+  }
+  .menu .user {
+    display: flex;
+    align-items: center;
+    
+  }
+  .menu .user i {
+    margin-right: 4px ;
+    margin-left: 10px;
+    font-size: 1.4rem;
+    color: white;
+  }
+  .menu .search-button {
+    width: 33%;
+    height: 50%;
+    margin: 0;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+    background: #00A6FB;
+  }
+  
+  .prueba1 {
+    display: grid;
+    grid-template-columns: 6% 1fr;
+    grid-template-rows: 6% 1fr;
+    height: 100vh;
+  }
+  .main-content::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+  }
+  .main-content::-webkit-scrollbar-thumb {
+    background: #00A6FB;
+    border-radius: 4px;
+  }
+  .main-content::-webkit-scrollbar-thumb:active {
+    background-color: #051923;
+    display: block;
+    visibility: visible;
+  }
